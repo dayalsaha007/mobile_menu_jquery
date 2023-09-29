@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" >
+            <div class="logo"><h3>Pappu</h3></div>
+
+            <nav class="navbar">
+                <ul class="nav_list">
+                    <li><a href="#" class="nav_link">Home</a></li>
+                    <li><a href="#" class="nav_link">About</a></li>
+                    <li><a href="index.html" class="nav_link">Service</a></li>
+                    <li><a href="#" class="nav_link">Blog</a></li>
+                    <li><a href="#" class="nav_link">Contact</a></li>
+                </ul>
+            </nav>
+
+                <i class=" mobile_nav ri-bar-chart-horizontal-line"></i>
+            
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".mobile_nav").click(function(){
+                $(this).toggleClass("ri-close-line");
+                $(".nav_list").toggleClass("active");
+            });
+        });
+    </script>
+    
+</body>
+</html>
